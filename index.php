@@ -1,4 +1,5 @@
 <?php
+use Bernoulli;
 
 $experiments = Bernoulli\Client::GetExperiments('first', null, [], null);
 if ($experiments[0]['variant'] == "hello_world") {
