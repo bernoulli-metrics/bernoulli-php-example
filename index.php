@@ -3,11 +3,11 @@ require('vendor/autoload.php');
 
 $experiments = Bernoulli\Client::GetExperiments('first', null, [], null);
 echo "Response: " . json_encode($experiments);
-echo "\n";
+echo "<br />";
 if ($experiments[0]['variant'] == "hello_world") {
-	echo "hello world!\n";
+	echo "hello world!<br />";
 } else {
-	echo "goodbye world!\n";
+	echo "goodbye world!<br />";
 }
 
 ?>
