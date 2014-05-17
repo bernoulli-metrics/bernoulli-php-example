@@ -11,3 +11,4 @@ if ($experiments[0]['variant'] == "hello_world") {
 }
 
 ?>
+<a href="goal.php?id=<?php $experiments[0]['user_id'] ?>">goal</a>
